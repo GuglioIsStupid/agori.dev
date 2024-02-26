@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet';
 
 import Header from '../components/Header';
 
+//todo: DO A BETTER WAY OF HANDELING BLOG POSTS GRAHHHHH
 const blogs = [
     {
         id: 1,
