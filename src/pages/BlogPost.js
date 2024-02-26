@@ -18,7 +18,7 @@ const blogs = [
         preview: "This is a test blog post",
         content: `A paragraph with *emphasis* and **strong importance**.
 
-> A block quote with ~strikethrough~ and a URL: https://reactjs.org.
+> A block quote with ~strikethrough~ and a URL: https://agori.dev.
         
 * Lists
 * [ ] todo
@@ -64,7 +64,7 @@ export default function BlogPost() {
                 {/* <meta name="twitter:image" content="https://agori.dev/images/agori-logo.png" /> */}
 
             </Helmet>
-            
+
             <Header />
 
             <div className="bg-gray-50 p-4 rounded-md mt-4">
