@@ -18,8 +18,6 @@ const blogs = [
         title: "Rit Progress Update",
         preview: "A quick update on the progress on Rit.",
         content: `
-# Rit Progress Update
-
 Hey guys! It's Guglio here. I will be the one writing the blog for today.
 
 Rit has been getting some really good progress. We are almost ready for the public Steam beta release.

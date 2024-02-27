@@ -9,9 +9,9 @@ import BlogItem from '../components/BlogItem';
 const allPosts = [
     { 
         id: 1,
-        date: "2024-02-26",
-        title: "Test blog post",
-        preview: "This is a test blog post"
+        date: "2024-02-27",
+        title: "Rit Progress Update",
+        preview: "A quick update on the progress on Rit."
     }
 ]
 
