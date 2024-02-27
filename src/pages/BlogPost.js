@@ -14,29 +14,29 @@ import Header from '../components/Header';
 const blogs = [
     {
         id: 1,
-        date: "2024-02-26",
-        title: "Test blog post",
-        preview: "This is a test blog post",
-        content: `A paragraph with *emphasis* and **strong importance**.
+        date: "2024-02-27",
+        title: "Rit Progress Update",
+        preview: "A quick update on the progress on Rit.",
+        content: `
+# Rit Progress Update
 
-> A block quote with ~strikethrough~ and a URL: https://agori.dev.
-        
-* Lists
-* [ ] todo
-* [x] done
-        
-A table:
-        
-| a | b |
-| - | - |
+Hey guys! It's Guglio here. I will be the one writing the blog for today.
 
-~~~lua
-function HelloBlog(hello)
-    print(hello)
-end 
+Rit has been getting some really good progress. We are almost ready for the public Steam beta release.
 
-HelloBlog("Hello, Blog!")
-~~~
+I have been working on programming in the UI for the game. I had some ups and downs, but I am happy with what we have so far!
+
+Some progress on the steam page. We are almost ready to publish the steam page, however we are just still waiting on some assets for the steam library and store page.
+
+## What's next?
+
+We are just going to be fixing some bugs here and there, and try to get some of the library assets finished.
+
+Pretty short update, but I hope you guys are excited for the release! We are really excited to get this game out to the public.
+
+Thanks for reading!
+
+-Guglio
     `
     }
 ]
@@ -44,10 +44,6 @@ HelloBlog("Hello, Blog!")
 export default function BlogPost() {
     const { id } = useParams();
     const post = blogs.find(post => post.id === parseInt(id));
-
-    {/*Create an embed for external links*/}
-    const LinkRenderer = ({ ...children }) => <Link {...children} />;
-    const ImageRenderer = ({ ...children }) => <img {...children} />;
 
     return (
         <div className="container mx-auto">
