@@ -8,6 +8,9 @@ import Blog from './pages/Blog';
 
 import BlogPost from './pages/BlogPost';
 
+// Error pages
+import Error404 from './components/error-codes/404';
+
 function App() {
   return (
     <div>
@@ -18,6 +21,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
 
         <Route path="/blog/:id" element={<BlogPost />} />
+
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>
     </div>
