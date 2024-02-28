@@ -100,7 +100,7 @@ export default function BlogPost() {
                         blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-gray-500 pl-4" {...props} />,
                         img: ({node, ...props}) => <img className="w-full" {...props} />,
 
-                        code: ({node, ...props}) => {
+                        code(props) {
                             const {children, className, node, ...rest} = props;
                             const match = /language-(\w+)/.exec(className || '');
                             return match ? (
