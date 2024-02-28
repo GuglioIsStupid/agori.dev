@@ -8,6 +8,8 @@ import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {dark} from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Helmet } from 'react-helmet';
 
+import Disqus from "disqus-react"
+
 import Header from '../components/Header';
 
 //todo: DO A BETTER WAY OF HANDELING BLOG POSTS GRAHHHHH
@@ -42,6 +44,15 @@ Thanks for reading!
 export default function BlogPost() {
     const { id } = useParams();
     const post = blogs.find(post => post.id === parseInt(id));
+
+
+    // Disqus implementation
+    const disqusShortname = "agoristudios";
+    const disqusConfig = {
+        url: "https://agori.dev/blog/" + post.id,
+        identifier: post.id,
+        title: post.title,
+    }
 
     return (
         <div className="container mx-auto">
@@ -89,7 +100,7 @@ export default function BlogPost() {
                         blockquote: ({node, ...props}) => <blockquote className="border-l-4 border-gray-500 pl-4" {...props} />,
                         img: ({node, ...props}) => <img className="w-full" {...props} />,
 
-                        code(props) {
+                        code: ({node, ...props}) => {
                             const {children, className, node, ...rest} = props;
                             const match = /language-(\w+)/.exec(className || '');
                             return match ? (
@@ -109,6 +120,11 @@ export default function BlogPost() {
                 >
                     {post.content}
                 </ReactMarkdown>
+
+                <Disqus.DiscussionEmbed 
+                    shortname={disqusShortname} 
+                    config={disqusConfig} 
+                />
             </div>
         </div>
     )
