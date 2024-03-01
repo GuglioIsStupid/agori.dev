@@ -122,8 +122,6 @@ export default function BlogPost() {
                 </ReactMarkdown>
 
                 {/*Line seperator*/}
-                <Divider className="mt-4"/>
-
                 <Disqus.DiscussionEmbed 
                     shortname={disqusShortname} 
                     config={disqusConfig} 
