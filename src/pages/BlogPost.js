@@ -121,9 +121,13 @@ export default function BlogPost() {
                     {post.content}
                 </ReactMarkdown>
 
+                {/*Line seperator*/}
+                <Divider className="mt-4"/>
+
                 <Disqus.DiscussionEmbed 
                     shortname={disqusShortname} 
                     config={disqusConfig} 
+                    className="mt-4"
                 />
             </div>
         </div>
