@@ -47,9 +47,9 @@ export default function BlogPost() {
 
 
     // Disqus implementation
-    const disqusShortname = "agoristudios";
+    const disqusShortname = "agori-dev";
     const disqusConfig = {
-        url: "https://agori.dev/blog/" + post.id,
+        url: "https://agori.dev",
         identifier: post.id,
         title: post.title,
     }
