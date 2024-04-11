@@ -18,6 +18,11 @@ const blogs = [
         title: "Rit Progress Update",
         preview: "A quick update on the progress on Rit.",
         content: `
+
+# Rit Progress Update
+
+## Introduction
+
 Hey guys! It's Guglio here. I will be the one writing the blog for today.
 
 Rit has been getting some really good progress. We are almost ready for the public Steam beta release.
@@ -63,10 +68,11 @@ export default function BlogPost() {
             <Header />
 
             <div className="bg-gray-50 p-4 rounded-md mt-4">
-                <Link to="/blog" className="text-blue-500 hover:underline mb-4 block">Back to blog</Link>
-                <h1 className="text-3xl font-bold">{post.title}</h1>
-                <p className="text-gray-500">{post.date}</p>
-                <ReactMarkdown 
+                <Link to="/blog" className="text-blue-500 hover:underline mb-4 block text-sm">Back to blog</Link>
+                <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+                <p className="text-gray-500 text-sm mb-4">{post.date}</p>
+
+                <ReactMarkdown
                     remarkPlugins={
                         [remarkGfm]
                     }
@@ -75,12 +81,12 @@ export default function BlogPost() {
                         th: ({node, ...props}) => <th className="border px-4 py-2" {...props} />,
                         td: ({node, ...props}) => <td className="border px-4 py-2" {...props} />,
                         tr: ({node, ...props}) => <tr className="border px-4 py-2" {...props} />,
-                        h1: ({node, ...props}) => <h1 className="text-2xl font-bold" {...props} />,
-                        h2: ({node, ...props}) => <h2 className="text-xl font-bold" {...props} />,
-                        h3: ({node, ...props}) => <h3 className="text-lg font-bold" {...props} />,
-                        h4: ({node, ...props}) => <h4 className="text-md font-bold" {...props} />,
-                        h5: ({node, ...props}) => <h5 className="text-sm font-bold" {...props} />,
-                        h6: ({node, ...props}) => <h6 className="text-xs font-bold" {...props} />,
+                        h1: ({node, ...props}) => <h1 className="text-2xl font-bold mt-4 mb-4" {...props} />,
+                        h2: ({node, ...props}) => <h2 className="text-xl font-bold mt-4 mb-4" {...props} />,
+                        h3: ({node, ...props}) => <h3 className="text-lg font-bold mt-4 mb-4" {...props} />,
+                        h4: ({node, ...props}) => <h4 className="text-md font-bold mt-4 mb-4" {...props} />,
+                        h5: ({node, ...props}) => <h5 className="text-sm font-bold mt-4 mb-4" {...props} />,
+                        h6: ({node, ...props}) => <h6 className="text-xs font-bold mt-4 mb-4" {...props} />,
                         p: ({node, ...props}) => <p className="text-base" {...props} />,
                         a: ({node, ...props}) => <a className="text-blue-500" {...props} />,
                         ul: ({node, ...props}) => <ul className="list-disc" {...props} />,

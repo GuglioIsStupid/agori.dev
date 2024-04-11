@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Pages
 import Home from './pages/Home';
+import Projects from "./pages/Projects";
 import About from './pages/About';
 import Blog from './pages/Blog';
 
@@ -16,12 +17,15 @@ function App() {
     <div>
       <Router>
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        {/* Blog Pages */}
         <Route path="/blog" element={<Blog />} />
-
         <Route path="/blog/:id" element={<BlogPost />} />
 
+        {/* Error Pages */}
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>

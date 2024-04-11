@@ -14,6 +14,7 @@ const Header = () => {
                 </div>
                 <div className="flex space-x-4">
                     <Link to="/" className="hover:underline hover:scale-110 transform transition duration-250">Home</Link>
+                    <Link to="/projects" className="hover:underline hover:scale-110 transform transition duration-250">Projects</Link>
                     <Link to="/about" className="hover:underline hover:scale-110 transform transition duration-250">About</Link>
                     <Link to="/blog" className="hover:underline hover:scale-110 transform transition duration-250">Blog</Link>
                 </div>

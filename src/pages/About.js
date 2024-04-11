@@ -11,9 +11,7 @@ const About = () => {
                 <p className="text-2xl">About</p>
                 <br />
                 <p className="mt-4">AGORI is a website that showcases our projects and blog posts.</p>
-                <p className="mt-4">The website is open-sourced and available on GitHub.</p>
-                <p className="mt-4">Check out the homepage for our projects and blog posts.</p>
-                <Link to="/" className="text-sm text-blue-500 hover:underline">Go back to homepage</Link>
+                <p className="mt-4">The website is open-sourced and available on <a href="https://github.com/GuglioIsStupid/agori.dev" className="text-blue-500 hover:underline">GitHub</a>.</p>
             </div>
         </div>
 
