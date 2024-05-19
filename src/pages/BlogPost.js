@@ -15,6 +15,24 @@ import Header from '../components/Header';
 //todo: DO A BETTER WAY OF HANDELING BLOG POSTS GRAHHHHH
 const blogs = [
     {
+        id: 2,
+        date: "2024-05-19",
+        title: "(Temporary?) Shutdown of bots.agori.dev",
+        preview: "An update on the status of bots.agori.dev.",
+        content: `
+# (Temporary?) Shutdown of bots.agori.dev
+
+Hey everyone, it's Guglio here. I have some bad news to share with you all.
+bots.agori.dev has been (temporarily?) shut down. I do not get the funding required to keep the servers running. I am currently looking for a new way to host the bots, but I am not sure when I will be able to get the bots back up and running.
+When I do get something back up, all bot instances will be reset, and all data will be lost. I am sorry for the inconvenience this may cause.
+
+Please consider checking out https://gimmickbots.com. Same as this site, but actually works. (Please note they have a 1 hour time minimum for bot posting)
+
+Goodbye for now,
+- Guglio
+`
+    },
+    {
         id: 1,
         date: "2024-02-27",
         title: "Rit Progress Update",

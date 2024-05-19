@@ -7,6 +7,12 @@ import Header from '../components/Header';
 import BlogItem from '../components/BlogItem';
 
 const allPosts = [
+    {
+        id: 2,
+        date: "2024-05-19",
+        title: "(Temporary?) Shutdown of bots.agori.dev",
+        preview: "An update on the status of bots.agori.dev."
+    },
     { 
         id: 1,
         date: "2024-02-27",
