@@ -59,7 +59,7 @@ Pretty short update, but I hope you guys are excited for the release! We are rea
 
 Thanks for reading!
 
--Guglio
+\- Guglio
     `
     }
 ]
@@ -70,7 +70,7 @@ export default function BlogPost() {
 
 
     // Disqus implementation
-    const disqusShortname = "agori-dev" + post.id;
+    const disqusShortname = "agori-dev";
     const disqusConfig = {
         url: "https://agori.dev",
         identifier: post.id,
