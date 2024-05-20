@@ -30,6 +30,10 @@ Please consider checking out https://gimmickbots.com. Same as this site, but act
 
 Goodbye for now,
 - Guglio
+
+Note: I am uncertain when I will be able to get everyones bot sources to whoever requests them. I will try to get them to you as soon as possible.
+
+Message me on discord for your bot source: @guglioisstupid
 `
     },
     {
