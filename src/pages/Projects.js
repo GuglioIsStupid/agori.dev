@@ -38,7 +38,7 @@ const ProjectsList = [
     },
     {
         name: "Shadow of Hazel",
-        description: "A novel within the mythical world of Terralore. Dragons have been attacking many areas of the island of Zetalor during a civil war, and only one can save the island, and inevitably the entire world.",
+        description: "A novel series within Hazel, a world where resources are scarce and dwindling. Follow the aspiring merchant Azaria, her wizard sister Rebecca, and Stella, the rebellious demon she accidentally summons as they go on a quest through the lands of Vuloren all the way to the far east to take down a Demonic plot to either destroy the world, or begin it again.",
         link: "/projects/shadow-of-hazel",
         image: null,
         screenshots: [],
