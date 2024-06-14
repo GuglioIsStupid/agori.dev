@@ -1,34 +1,25 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import './App.css';
 
 // Pages
 import Home from './pages/Home';
-import Projects from "./pages/Projects";
-import About from './pages/About';
-import Blog from './pages/Blog';
-
-import BlogPost from './pages/BlogPost';
 
 // Error pages
-import Error404 from './components/error-codes/404';
+/* import Error404 from './components/error-codes/404'; */
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
-      <Routes>
-        {/* Main Pages */}
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        {/* Blog Pages */}
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
-
-        {/* Error Pages */}
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-    </Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
