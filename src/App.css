@@ -1,5 +1,5 @@
 .App {
-
+  background-color: #282c34; 
 }
 
 :root {
@@ -41,7 +41,7 @@
   background: var(--secondary);
 }
 
-/* Auto hide scrollbar (with transition) */
+/* Firefox (and half-chromium ig) */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--primary) var(--secondary);
