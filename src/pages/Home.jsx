@@ -26,7 +26,7 @@ function Home() {
                                 <Card src="assets/literally-me.png" text="Not Too Bad" label="Comic" path="/projects/not-too-bad" description="A comic series that is the canonical sequel to Guys Vs. Gods, continuing the story a few generations later. You'll follow Kurtis Guy, Charlie Guy, Tori Sargoth and Alice Reeds in an adventure to end a cycle started so long ago." />
                             </li>
                             <li className="cards__item">
-                                <Card src="assets/literally-me.png" text="Challenges Of Zandor" label="Game" path="/projects/guys-vs-gods" description="Top-Down ARPG" />
+                                <Card src="assets/literally-me.png" text="Challenges Of Zandor" label="Novel" path="/projects/guys-vs-gods" description="Not a desc, just a reminder to fix this portion of the site." />
                             </li>
                         </div>
                     </div>
