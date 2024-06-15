@@ -35,11 +35,11 @@ function Navbar() {
                                 Home
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link to="/projects" className="nav-links" onClick={() => setClick(!click)}>
                                 Projects
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link to="/blog" className="nav-links" onClick={() => setClick(!click)}>
                                 Blog

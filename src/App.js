@@ -7,6 +7,7 @@ import './App.css';
 
 // Pages
 import Home from './pages/Home';
+import Blog from './pages/Blog';
 
 // Error pages
 /* import Error404 from './components/error-codes/404'; */
@@ -18,6 +19,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </Router>
     </div>
